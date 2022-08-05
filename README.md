@@ -122,7 +122,7 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 | Total imputed | 34,921,029 | 100% | 		   
 | MAF (dosage) < 0.005 |  |  |    
 | Imputation R2 < 0.6 |  |  |    
-| _Any of the above two_ | 8,680,660 | % | 
+| _Any of the above two_ | 8,680,660 | 24.9% | 
 | Call rate < 0.98 |  |  |                
 | pHWE < 1e-10 |  |  |                
 | **_Post-QC_** | 8,679,265 | 24.9% |
