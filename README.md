@@ -102,29 +102,29 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 | Duplicated SNPs  | 431  | 0.07%  |
 | Not confidently mapped (chr & pos=0)  | 0 | 0%  |
 | _Any of the above three_  | 15,184  | 2.34%  |
-| **_EUR (pop-specific) QC:_**  |   |   |
-| Showing batch association (p < 1e-04)  | 4,112  | %  |
+| **_EUR (pop-specific) QC:_**  | 628,993  |   |
+| Showing batch association (p < 1e-04)  | 4,112  | 0.63%  |
 | **_Final QC:_**  |   |   |
-| SNP-level call rate < 0.98  |   | 7e-05%  |
-| pHWE < 1e-10  |   | 0.18%  |
-| Non-autosomal, indel, or monomorphic  |   | 9.5%  |
-| **_Post-QC_** |  | % |
+| SNP-level call rate < 0.98  | 14  |  |
+| pHWE < 1e-10  | 7,548  |  |
+| Non-autosomal, indel, or monomorphic  | 20,437 |  |
+| **_Post-QC_** | 584,584 |  |
 | **_HRC QC (for imputation):_**  |   |   |
-| Not in HRC or mismatched info  |   | %  |
+| Not in HRC or mismatched info  |   |  |
 | **_Send to Michigan imputation server_**  | 542,640  | 83.7%  |
 
 
 
 ## Summary of post-imputation QC
 
-| Variant filter (1) | # Variants | % Total |   | Variant filter (2)  | # Variants | % Total |
-| ------------------ | ---------: | ------: |---| ------------------- | ---------: | ------: |
-| Total imputed | 33,822,636 | 100% | 		    | Total imputed | 33,822,636 | 100% | 
-| MAF (dosage) < 0.01 | 26,051,805 | 77.0% |    | MAF (dosage) < 0.005 | 24,946,776 | 73.8% | 
-| Imputation R2 < 0.8 | 17,443,564 | 51.6% |    | Imputation R2 < 0.6 | 9,993,397 | 29.5% |
-| _Any of the above two_ | 26,468,624 | 78.3% | | _Any of the above two_ | 25,100,024 | 74.2% |
-| Call rate < 0.98 | 0 | 0.0% |                 | Call rate < 0.98 | 0 | 0.0% |
-| pHWE < 1e-10 | 167 | 5e-04% |                 | pHWE < 1e-10 | 213 | 6e-04% |
-| **_Post-QC_** | 7,353,845 | 21.7% |           |**_Post-QC_** | 8,722,399 | 25.8% |
+| Variant filter.    | # Variants | % Total |   
+| ------------------ | ---------: | ------: |
+| Total imputed | 34,921,029 | 100% | 		   
+| MAF (dosage) < 0.005 |  |  |    
+| Imputation R2 < 0.6 |  |  |    
+| _Any of the above two_ | 8,680,660 | % | 
+| Call rate < 0.98 |  |  |                
+| pHWE < 1e-10 |  |  |                
+| **_Post-QC_** | 8,679,265 | 24.9% |
 
 
