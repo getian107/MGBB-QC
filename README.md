@@ -1,6 +1,6 @@
 # Mass General Brigham Biobank genotyping data QC (Feb 2022 release)
 
-This repository details the quality control (QC) pipeline of the Partners Biobank genotype data, which largely follows the recommendations described in:
+This repository details the quality control (QC) pipeline of the MGB Biobank samples genotyped on Illumina’s GSA chip, which largely follows the recommendations described the reference below and leverages the scripts (https://github.com/Annefeng/PBK-QC-pipeline) used to QC ealier MGBB releases genotyped on Illumina’s Multi-Ethnic Global array:
 
 Peterson, R. E., Kuchenbaecker, K., Walters, R. K., Chen, C.-Y., Popejoy, A. B., Periyasamy, S., et al. (2019). Genome-wide Association Studies in Ancestrally Diverse Populations: Opportunities, Methods, Pitfalls, and Recommendations. Cell, 179(3), 589–603. http://doi.org/10.1016/j.cell.2019.08.051
 
@@ -34,7 +34,6 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 * QC within European samples (metrics may be affected by ancestry; `scripts 09-13`)
 	* Remove samples that fail sex check (--check-sex)
 	* Absolute value of autosomal heterozygosity rate deviating from the mean (5SD; --het)
-	* (SKIP) Identify unrelated Individuals (Pi_hat <0.2) within European samples
 	* Remove SNPs that show batch associations
 		* Regress each batch indicator on SNPs, adjusting for sex (association P < 1e-4)
 
@@ -49,13 +48,14 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 	* Harmonize study data with HRC/1KG data
 	* Convert plink to vcf by chromosome
 
-* Send related European samples to Michigan server for imputation (using HRC as the reference panel)
+* Send European samples to Michigan server for imputation (using HRC as the reference panel)
 
 * Post-imputation QC (converting vcf dosages to plink hard-call genotypes; `scripts 18-20`)
 	* INFO score/Imputation R2 >0.6
 	* MAF (based on imputed dosages) >0.5%
+	* HWE >1e-10
+	* SNP-level call rate >0.98
 	
-
 
 
 ## Summary of pre-imputation QC
