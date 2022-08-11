@@ -66,8 +66,8 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 
 | 1KG superpop    |  EUR   |  AMR   |  AFR   |  EAS   |  SAS   | Unclassified | Total |
 | --- | -----: | -----: | -----: | -----: | -----: | -----------: | -----:|   
-| # Samples | 38,046 | 5,361 | 2,327 | 1,037 | 297 | 548 | 47,319 |
-| % Total | 80.4% | 11.3% | 4.9% | 2.2% | 0.6% | 1.2% | 100% |
+| # Samples | 33,614 | 2,599 | 2,036 | 908 | 480 | 7,682 | 47,319 |
+| % Total | 71.1% | 5.5% | 4.3% | 1.9% | 1.0% | 16.2% | 100% |
 
 
 
