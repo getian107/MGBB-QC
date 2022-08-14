@@ -84,6 +84,7 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 | Failing sex check (reported != imputed sex, using F < 0.2 <br>for female & >0.8 for male) | 332  | 0.87%  |
 | Outlying heterozygosity rate (>5SD from the mean) | 134  | 0.35%  |
 | _Any of the above two_ | 451  | 0.95%  |
+| PCA outliers (6SD away in top 10 PCs) | 109 |
 | **_Post-QC_** | 37,259  | 78.7%  |
 
 
