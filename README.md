@@ -105,7 +105,7 @@ The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg
 | Not confidently mapped (chr & pos=0)  | 0 | 0%  |
 | _Any of the above three_  | 15,184  | 2.34%  |
 | **_EUR (pop-specific) QC:_**  | 633,119  | 97.66%  |
-| Showing batch association (p < 1e-04)  | 4,112  | 0.64%  |
+| Showing batch association (p < 1e-04)  | 4,112  | 0.63%  |
 | **_Final QC:_**  |   |   |
 | SNP-level call rate < 0.98  | 14  | 2.16e-3% |
 | pHWE < 1e-10  | 7,541  | 1.16% |
