@@ -95,7 +95,7 @@ The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg
 | ------------- | -------------: | -------------: |
 | Initial variant count (avg. across batches) | 0.68M | - |
 | **_Batch QC:_**  |   |   |
-| SNP call rate < 0.95 and then < 0.98 (avg. across batches)| 0.67M  | -  |
+| SNP call rate < 0.95 and then < 0.98 (avg. across batches)| 10K  | -  |
 | Common across batches | 656,598 | - |
 | Missing rate diff > 0.0075 between any two batches  | 8,295  | -  |
 | **_Merged QC:_**  |   |   |
