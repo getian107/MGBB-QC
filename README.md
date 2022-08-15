@@ -1,12 +1,12 @@
 # Mass General Brigham Biobank genotyping data QC (Feb 2022 release)
 
-This repository details the quality control (QC) pipeline of the MGB Biobank samples genotyped on Illumina’s GSA chip, which largely follows the recommendations described the reference below and leverages the scripts (https://github.com/Annefeng/PBK-QC-pipeline) used to QC ealier MGBB releases genotyped on Illumina’s Multi-Ethnic Global array:
+This repository details the quality control (QC) pipeline of the MGB Biobank samples genotyped on Illumina’s GSA array, which largely follows the recommendations described the reference below and leverages the scripts (https://github.com/Annefeng/PBK-QC-pipeline) used to QC ealier MGBB releases genotyped on Illumina’s Multi-Ethnic Global array:
 
 Peterson, R. E., Kuchenbaecker, K., Walters, R. K., Chen, C.-Y., Popejoy, A. B., Periyasamy, S., et al. (2019). Genome-wide Association Studies in Ancestrally Diverse Populations: Opportunities, Methods, Pitfalls, and Recommendations. Cell, 179(3), 589–603. http://doi.org/10.1016/j.cell.2019.08.051
 
-The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg19 coordinates.
+The dataset includes 47,321 individuals genotyped on Illumina’s GSA array in hg19 coordinates.
 
-Note that there is substantial overlap between the samples genotyped on the MEG array and GSA array.
+NOTE: There is substantial overlap between the samples genotyped on the MEG array and GSA array.
 
 
 ## Quality control pipeline
@@ -39,7 +39,7 @@ Note that there is substantial overlap between the samples genotyped on the MEG 
 	* Remove SNPs that show batch associations
 		* Regress each batch indicator on SNPs, adjusting for sex (association P < 1e-4)
 
-* Calculate PCs within related European samples using common, high-quality SNPs (`script 14`)
+* Calculate PCs within European samples using common, high-quality SNPs (`script 14`)
 
 * Final SNP-level QC within European samples (`script 15`)
 	* SNP-level call rate >0.98
