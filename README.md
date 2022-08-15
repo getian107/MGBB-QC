@@ -100,20 +100,20 @@ The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg
 | Missing rate diff > 0.0075 between any two batches  | 8,295  | -  |
 | **_Merged QC:_**  |   |   |
 | Total  | 648,303 | 100%  |
-| Monomorphic SNPs  | 14,753 | %  |
-| Duplicated SNPs  | 427  | %  |
+| Monomorphic SNPs  | 14,753 | 2.28%  |
+| Duplicated SNPs  | 427  | 0.07%  |
 | Not confidently mapped (chr & pos=0)  | 0 | 0%  |
 | _Any of the above three_  | 15,184  | 2.34%  |
 | Remaining | 633,119 |   |
-| **_EUR (pop-specific) QC:_**  | 633,119  |   |
-| Showing batch association (p < 1e-04)  | 4,112  | 0.63%  |
+| **_EUR (pop-specific) QC:_**  | 633,119  | 97.66%  |
+| Showing batch association (p < 1e-04)  | 4,112  | 0.64%  |
 | **_Final QC:_**  |   |   |
-| SNP-level call rate < 0.98  | 14  |  |
-| pHWE < 1e-10  | 7,548  |  |
-| Non-autosomal, indel, or monomorphic  | 20,437 |  |
+| SNP-level call rate < 0.98  | 14  | 2.16e-3% |
+| pHWE < 1e-10  | 7,541  | 1.16% |
+| Non-autosomal, indel, or monomorphic  | 36,868 | 5.69% |
 | **_Post-QC_** | 584,584 |  |
-| **_HRC QC (for imputation):_**  |   |   |
-| Not in HRC or mismatched info  |   |  |
+| **_HRC QC (for imputation):_**  | 584,584  | 90.17%  |
+| Not in HRC or mismatched info  | 41,944  | 6.47% |
 | **_Send to Michigan imputation server_**  | 542,640  | 83.7%  |
 
 
