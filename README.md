@@ -110,8 +110,8 @@ The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg
 | SNP-level call rate < 0.98  | 14  | 2.16e-3% |
 | pHWE < 1e-10  | 7,541  | 1.16% |
 | Non-autosomal, indel, or monomorphic  | 36,868 | 5.69% |
-| **_Post-QC_** | 584,584 |  |
-| **_HRC QC (for imputation):_**  | 584,584  | 90.17%  |
+| **_Post-QC_** | 584,584 | 90.17%  |
+| **_HRC QC (for imputation):_**  | | |
 | Not in HRC or mismatched info  | 41,944  | 6.47% |
 | **_Send to Michigan imputation server_**  | 542,640  | 83.7%  |
 
