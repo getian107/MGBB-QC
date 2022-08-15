@@ -104,7 +104,6 @@ The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg
 | Duplicated SNPs  | 427  | 0.07%  |
 | Not confidently mapped (chr & pos=0)  | 0 | 0%  |
 | _Any of the above three_  | 15,184  | 2.34%  |
-| Remaining | 633,119 |   |
 | **_EUR (pop-specific) QC:_**  | 633,119  | 97.66%  |
 | Showing batch association (p < 1e-04)  | 4,112  | 0.64%  |
 | **_Final QC:_**  |   |   |
