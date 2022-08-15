@@ -121,7 +121,7 @@ Note that there is substantial overlap between the samples genotyped on the MEG 
 
 ## Summary of post-imputation QC
 
-| Variant filter.    | # Variants | % Total |   
+| Variant filter     | # Variants | % Total |   
 | ------------------ | ---------: | ------: |
 | Total imputed | 34,921,029 | 100% | 		   
 | MAF (dosage) < 0.005 or Imputation R2 < 0.6 | 26,240,369 | 75.1% |    
