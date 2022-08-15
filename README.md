@@ -6,6 +6,8 @@ Peterson, R. E., Kuchenbaecker, K., Walters, R. K., Chen, C.-Y., Popejoy, A. B.,
 
 The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg19 coordinates.
 
+Note that there is substantial overlap between the samples genotyped on the MEG array and GSA array.
+
 
 ## Quality control pipeline
 
