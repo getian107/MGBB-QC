@@ -4,7 +4,7 @@ This repository details the quality control (QC) pipeline of the MGB Biobank sam
 
 Peterson, R. E., Kuchenbaecker, K., Walters, R. K., Chen, C.-Y., Popejoy, A. B., Periyasamy, S., et al. (2019). Genome-wide Association Studies in Ancestrally Diverse Populations: Opportunities, Methods, Pitfalls, and Recommendations. Cell, 179(3), 589–603. http://doi.org/10.1016/j.cell.2019.08.051
 
-The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg19 coordinates.
+The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg19 coordinates.
 
 
 ## Quality control pipeline
@@ -29,7 +29,7 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 	* Identify individuals with European ancestry using selected SNPs
 		* Run PCA combining study samples + 1KG data
 		* Use Random Forest to classify genetic ancesty with a prediciton prob. >0.8
-		* Remove individuals PCA outlier (6SD away from the top 10 PCs)
+		* Remove PCA outliers (6SD away from the population mean for each of the top 10 PCs)
 
 * QC within European samples (metrics may be affected by ancestry; `scripts 09-13`)
 	* Remove samples that fail sex check (--check-sex)
@@ -39,7 +39,7 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 
 * Calculate PCs within related European samples using common, high-quality SNPs (`script 14`)
 
-* Final SNP-level QC within related European samples (`script 15`)
+* Final SNP-level QC within European samples (`script 15`)
 	* SNP-level call rate >0.98
 	* HWE >1e-10
 	* Retain only autosomal SNPs, excluding indels and monomorphic SNPs (for imputation; HRC: SNP only)
@@ -80,6 +80,7 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 | **_Batch QC:_**  |   |   |
 | Sample-level call rate < 0.98  | 2  | 0.0%  |
 | **_Merged QC:_**  |   |   |
+| Non-European | 13,705 | 29.0% |
 | **_EUR (pop-specific) QC:_**  |   |   |
 | Failing sex check (reported != imputed sex, using F < 0.2 <br>for female & >0.8 for male) | 332  | 0.87%  |
 | Outlying heterozygosity rate (>5SD from the mean) | 134  | 0.35%  |
