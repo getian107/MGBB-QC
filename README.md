@@ -100,11 +100,12 @@ The dataset includes 47,321 individuals genotyped on Illumina’s GSA chip in hg
 | Missing rate diff > 0.0075 between any two batches  | 8,295  | -  |
 | **_Merged QC:_**  |   |   |
 | Total  | 648,303 | 100%  |
-| Monomorphic SNPs  | 14,753 | 2.28%  |
-| Duplicated SNPs  | 431  | 0.07%  |
+| Monomorphic SNPs  | 14,753 | %  |
+| Duplicated SNPs  | 427  | %  |
 | Not confidently mapped (chr & pos=0)  | 0 | 0%  |
 | _Any of the above three_  | 15,184  | 2.34%  |
-| **_EUR (pop-specific) QC:_**  | 628,993  |   |
+| Remaining | 633,119 |   |
+| **_EUR (pop-specific) QC:_**  | 633,119  |   |
 | Showing batch association (p < 1e-04)  | 4,112  | 0.63%  |
 | **_Final QC:_**  |   |   |
 | SNP-level call rate < 0.98  | 14  |  |
