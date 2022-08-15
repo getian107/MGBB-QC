@@ -85,7 +85,7 @@ The dataset includes 47,319 individuals genotyped on Illumina’s GSA chip in hg
 | Outlying heterozygosity rate (>5SD from the mean) | 134  | 0.35%  |
 | _Any of the above two_ | 451  | 0.95%  |
 | PCA outliers (6SD away in top 10 PCs) | 109 |
-| **_Post-QC_** | 37,259  | 78.7%  |
+| **_Post-QC_** | 33,067 | 69.9%  |
 
 
 ### Variant QC
